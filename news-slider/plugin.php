@@ -1,5 +1,5 @@
 <?php
-    class newsSlider extends Plugin {
+    class newssliders extends Plugin {
 
         
 	public function init()
@@ -166,7 +166,7 @@ $html .='
         public function newsSlider()
         {
             global $pages;
-          include($this->phpPath().'php/newsSlider.php');
+          include($this->phpPath().'news-slider/php/newsSlider.php');
         }
     
     }
