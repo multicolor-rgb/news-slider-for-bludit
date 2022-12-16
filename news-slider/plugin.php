@@ -166,7 +166,7 @@ $html .='
         public function newsSlider()
         {
             global $pages;
-          include($this->phpPath().'news-slider/php/newsSlider.php');
+          include($this->phpPath().'php/newsSlider.php');
         }
     
     }

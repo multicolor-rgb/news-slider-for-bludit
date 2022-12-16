@@ -4,7 +4,7 @@
 $newLoop = array();
 
 forEach($pages->db as $key=>$pagx){
-if($pagx['category']!=='' $pagx['type']=='published'){
+if($pagx['category']!=='' && $pagx['type']=='published'){
 
 if($pagx['category']==strtolower($this->getValue('category'))){
      $newLoop[$key]= $pagx;
