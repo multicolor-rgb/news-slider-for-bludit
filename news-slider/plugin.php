@@ -1,5 +1,5 @@
 <?php
-    class newsSlider extends Plugin {
+    class newssliders extends Plugin {
 
         
 	public function init()
@@ -15,7 +15,8 @@
             'btntextcolor'=>'',
             'height'=>'600px',
             'heightmobile'=>'600px',
-            'speed'=>'3000'
+            'speed'=>'3000',
+            'borderradius'=>''
 		);
 
         $this->customHooks = array(
@@ -109,12 +110,18 @@ $html .='
 
 <br>
 <p>Height slider example (600px)</p>
-<input type="text" value="'.$this->getValue('height').'">
+<input type="text" name="height" value="'.$this->getValue('height').'">
 
 
 <br>
 <p>Height slider mobile (600px)</p>
-<input type="text" value="'.$this->getValue('heightmobile').'">
+<input type="text" name="heightmobile" value="'.$this->getValue('heightmobile').'">
+
+
+<br>
+<p>Border radius arrow (example 5px)</p>
+<input type="text" name="borderradius" value="'.$this->getValue('borderradius').'">
+
 
 
 ';
@@ -125,7 +132,7 @@ $html .='
 
 <br>
 <p>Button text</p>
-<input type="text" name="btncolor" class="form-control" value="'.$this->getValue('btntext').'">
+<input type="text" name="btntext" class="form-control" value="'.$this->getValue('btntext').'">
 
 
 

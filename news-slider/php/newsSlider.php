@@ -52,8 +52,25 @@ $newLoop = array_slice($newLoop,0,$this->getValue('howmuch'));
     }
 
 <?php endif ?>
+
+
     }
 
+
+    <?php if($this->getValue('borderradius')!==null):?>
+
+
+    .swipeleft{
+    border-top-right-radius:<?php echo $this->getValue('borderradius');?>;
+    border-bottom-right-radius:<?php echo $this->getValue('borderradius');?>;
+}
+
+.swiperight{
+    border-top-left-radius:<?php echo $this->getValue('borderradius');?>;
+    border-bottom-left-radius:<?php echo $this->getValue('borderradius');?>;
+}
+
+<?php endif ?>
 
 </style>
 
